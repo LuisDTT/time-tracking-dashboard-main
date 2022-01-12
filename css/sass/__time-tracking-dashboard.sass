@@ -1,0 +1,113 @@
+.main
+    font-family: $family
+    background: $very-dark-blue
+    min-height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+
+.grid-time-tracking
+    margin: 1.5em
+    display: grid
+    grid-template-columns: minmax(200px,400px)
+    grid-gap: 1em
+
+.user-card
+    background: $dark-blue
+    border-radius: 13px
+    overflow: hidden
+
+    &__person
+        background: $blue
+        display: flex
+        align-items: center
+        padding: 2em
+        border-radius: 13px
+        &-avatar
+            height: 70px
+            border: 3px solid $white
+            border-radius: 50%
+            margin-right: 1em
+    &__info
+        color: $white
+        &-title
+            margin: 0 0 3px 0
+            font-size: 15px
+            color: $desaturated-blue
+
+        &-name
+            margin: 0
+            font-size: 1.5rem
+            font-weight: 300
+    &__date
+        display: flex
+        justify-content: space-around
+        align-items: center
+        padding: 0 10px
+        font-size: 1.2rem
+        &-btn
+            background: transparent
+            margin: 1.3em 0
+            border: none
+            color: $desaturated-blue
+            cursor: pointer
+        &-btn:hover
+            color: $white
+        &-btn--active
+            color: $pale-blue
+
+.card
+    border-radius: 13px
+    padding-top: 2.2em 
+    display: flex
+    &__main
+        background: $dark-blue
+        color: $white
+        padding: 1.7em 1.5em
+        border-radius: 13px
+        width: 100%
+    &__main:hover
+        background: #2e315c
+        cursor: pointer
+    &__head
+        display: flex
+        align-items: center
+        justify-content: space-between
+        &-title
+            margin: 0
+            font-size: $size
+            font-weight: 500
+        &-icon:hover path
+            fill: $white
+    &__timeframes
+        margin-top: 7px 
+        display: flex
+        justify-content: space-between
+        align-items: center
+        &-current
+            margin: 0 10px 0 0
+            font-size: 2rem
+            font-weight: 300
+        &-previous
+            margin: 0
+            font-size: 15px
+
+.card--work
+    background: url(images/icon-work.svg) $color-work no-repeat 90% -3%
+.card--play
+    background: url(images/icon-play.svg) $color-play no-repeat 95% -3%
+.card--study
+    background: url(images/icon-study.svg) $color-study no-repeat 95% -3% 
+.card--exercise
+    background: url(images/icon-exercise.svg) $color-exercise no-repeat 95% -3% 
+.card--social
+    background: url(images/icon-social.svg) $color-social no-repeat 95% -10% 
+.card--self-care
+    background: url(images/icon-self-care.svg) $color-self-care no-repeat 95% -3% 
+
+.attribution
+    position: fixed
+    bottom: 0
+    font-size: 12px
+    color: $white
+

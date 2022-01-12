@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/normalize.css">
+
+</head>
+<body>
+  <main class="main">
+    <div class="grid-time-tracking">
+
+      <div class="user-card">
+        <div class="user-card__person">
+          <img src="images/image-jeremy.png" alt="Jeremy" class="user-card__person-avatar">
+          <div class="user-card__info">
+            <p class="user-card__info-title">Report for</p>
+            <p class="user-card__info-name">Jeremy Robson</p> 
+          </div>
+        </div>
+        <div class="user-card__date">
+          <button id="btnDaily" class="user-card__date-btn">Daily</button>
+          <button id="btnWeekly" class="user-card__date-btn user-card__date-btn--active">Weekly</button>
+          <button id="btnMonthly" class="user-card__date-btn">Monthly</button>
+        </div>
+      </div>
+
+      <div class="card card--work">
+        <div class="card__main">
+          <div class="card__head">
+            <h4 class="card__head-title">Work</h4>
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg" class="card__head-icon"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+          </div>
+          <div id="workTimeFrames" class="card__timeframes">
+            <p class="card__timeframes-current">32hrs</p>
+            <p class="card__timeframes-previous">Last Week - 36hrs</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card--play">
+        <div class="card__main">
+          <div class="card__head">
+            <h4 class="card__head-title">Play</h4>
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg" class="card__head-icon"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+          </div>
+          <div id="playTimeFrames" class="card__timeframes">
+            <p class="card__timeframes-current">10hrs</p>
+            <p class="card__timeframes-previous">Last Week - 8hrs</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card--study">
+        <div class="card__main">
+          <div class="card__head">
+            <h4 class="card__head-title">Study</h4>
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg" class="card__head-icon"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+          </div>
+          <div id="studyTimeFrames" class="card__timeframes">
+            <p class="card__timeframes-current">4hrs</p>
+            <p class="card__timeframes-previous">Last Week - 7hrs</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card--exercise">
+        <div class="card__main">
+          <div class="card__head">
+            <h4 class="card__head-title">Exercise</h4>
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg" class="card__head-icon"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+          </div>
+          <div id="exerciseTimeFrames" class="card__timeframes">
+            <p class="card__timeframes-current">4hrs</p>
+            <p class="card__timeframes-previous">Last Week - 5hrs</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card--social">
+        <div class="card__main">
+          <div class="card__head">
+            <h4 class="card__head-title">Social</h4>
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg" class="card__head-icon"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+          </div>
+          <div id="socialTimeFrames" class="card__timeframes">
+            <p class="card__timeframes-current">5hrs</p>
+            <p class="card__timeframes-previous">Last Week - 10hrs</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card--self-care">
+        <div class="card__main">
+          <div class="card__head">
+            <h4 class="card__head-title">Self Care</h4>
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg" class="card__head-icon"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+          </div>
+          <div id="selfcareTimeFrames" class="card__timeframes">
+            <p class="card__timeframes-current">2hrs</p>
+            <p class="card__timeframes-previous">Last Week - 2hrs</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+<footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.instagram.com/luis_torresdev/" target="_blank">Luis Torres</a>.
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
